@@ -1,0 +1,69 @@
+.form{
+    &__label{
+    display: inline-block;
+
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $main-form-label-color;
+    padding-bottom: 4px;
+    }
+
+    &__input{
+      display: block;
+      width: 100%;
+      height: 40px;
+  
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      box-sizing: border-box;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      color: $main-form-text-color;
+      padding-left: 42px;
+
+      transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    /* When input focused */
+    &__input:focus-within + &__icon{
+      fill: $focuse-color;
+    }
+    &__input:focus-within{
+      outline: none;
+      border: 1px solid $focuse-color;
+    }
+    /* END when input focused */ 
+    /* Input icons */
+    &__icon{
+      position: absolute;
+      top: 11px;
+      left: 12px;
+
+      width: 18px;
+      height: 18px;
+      fill: $modal-icons-fill-color;
+
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__input-box{
+      position: relative;
+    }
+    /* END input icons */
+    &__input--comment{
+      height: 120px;
+      margin-bottom: 20px;
+      padding: 12px 16px;
+  
+      resize: none;
+      color: $main-form-text-color;
+      box-sizing: border-box;
+
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.01em;
+    }
+
+    &__input--comment::placeholder{
+      color: $modal-placeholder-text-color;
+    }
+}

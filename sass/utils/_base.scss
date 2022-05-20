@@ -1,0 +1,54 @@
+/* Global border-box */
+.html {
+  box-sizing: border-box;
+}
+/* END Global border-box */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/* Rules used for all pages of this project */
+.body {
+  background-color: $main-bgc;
+  color: $main-title-color;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+}
+body a {
+  text-decoration: none;
+}
+body li {
+  list-style-type: none;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  
+  @media (min-width: 1200px){
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+.section-title--mb50{
+  margin-bottom: 50px;
+}
+/*END Rules used for all pages of this project */
+/* Cancelling auto styles*/
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* END - Cancelling auto styles*/

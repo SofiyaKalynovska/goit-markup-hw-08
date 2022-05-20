@@ -1,0 +1,43 @@
+.policy{
+  position: relative;
+  display: inline-block;
+  padding-left: 24px;
+
+  @media (min-width: 1200px){
+    padding-left: 35px;
+    line-height: 1.71;
+    font-size: 14px;
+  }
+
+  font-size: 12px;
+  line-height: 1.17;
+
+  letter-spacing: 0.03em;
+  color: $main-form-label-color;
+  margin-bottom: 30px;
+
+    &__link{
+      color: $focuse-color;
+      text-decoration: underline;
+    }
+    &__icon{
+      position: absolute;
+      left: 0px;
+      @media (min-width: 1200px){
+        left: 12px;
+        top: 5px;
+      }
+
+      width: 16px;
+      height: 15px;
+      border-radius: 2px;
+      border: 2px solid $modal-icons-fill-color;
+      fill: $main-bgc;
+
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__checkbox:checked + &__icon{
+      fill: $focuse-color;
+      border: hidden;
+    }
+}

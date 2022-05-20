@@ -1,0 +1,52 @@
+
+.social{
+  display: flex;
+  justify-content: center;
+
+    /* Footer social icons style */
+    &__link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.1);
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__link:hover, 
+    &__link:focus {
+      background-color: $focuse-color;
+    }
+    &__icon {
+      width: 20px;
+      height: 20px;
+      fill: $second-icon-color;
+    }
+    &__item + &__item {
+      margin-left: 10px;
+    }
+    /* END Footer social icons style  */
+
+    /* Staff social icons */
+    &--dark {
+      margin-left: 32px;
+      margin-right: 32px;
+      padding: 0;
+    }
+
+    &__link--dark {
+      background-color: $main-bgc;
+      color: $main-icon-color;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__link--dark:hover,
+    &__link--dark:focus {
+      color: $second-icon-color;
+    }
+    &__icon--dark {
+      fill: currentColor;
+    }
+    /* END Staff social icons */
+}

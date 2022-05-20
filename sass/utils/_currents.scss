@@ -1,0 +1,13 @@
+
+.current::after {
+  content: '';
+  display: block;
+  line-height: 4px;
+  width: 100%;
+  height: 4px;
+  background-color: $focuse-color;
+  border-radius: 2px;
+  transform: translateY(25px); 
+
+}
+

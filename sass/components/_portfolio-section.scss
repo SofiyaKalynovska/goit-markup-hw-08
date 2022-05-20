@@ -1,0 +1,28 @@
+.portfolio {
+  padding: 60px 0;
+  // border: 1px solid #eeeeee;
+    @media (min-width: 1200px){
+      padding: 94px 0;
+    }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    }
+}
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 40px;
+  
+  @media (min-width: 768px){
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  @media (min-width: 1200px){
+    margin-bottom: 50px;
+    
+  }
+}
