@@ -1038,7 +1038,6 @@ p {
 
 @media (min-width: 1200px) {
   .product-card {
-    width: calc(100% / 3 - 30px);
     width: 370px;
   }
 }
@@ -1051,6 +1050,7 @@ p {
 .product-card__photo {
   display: block;
   margin-bottom: 0;
+  width: 100%;
 }
 
 .product-card__link {

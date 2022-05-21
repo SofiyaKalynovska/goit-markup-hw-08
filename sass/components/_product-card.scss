@@ -1,12 +1,12 @@
 .product-card {
 
-
+      
       @media (min-width: 768px){
         width: calc(100% / 2 - 15px);
         height: auto;
       }
       @media (min-width: 1200px){
-        width: calc(100% / 3 - 30px);
+        
         width: 370px;
       }
 
@@ -19,6 +19,7 @@
     &__photo {
       display: block;
       margin-bottom: 0;
+      width: 100%;
       
     }
 
