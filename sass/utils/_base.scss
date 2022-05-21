@@ -35,7 +35,10 @@ body li {
   }
 }
 .section-title--mb50{
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @media (min-width: 1200px){
+    margin-bottom: 50px;
+  }
 }
 /*END Rules used for all pages of this project */
 /* Cancelling auto styles*/
